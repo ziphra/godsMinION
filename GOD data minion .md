@@ -189,4 +189,8 @@ cuteSV ../lra/lra.bam /media/god/DATA/reference_genome/hg38/hg38_GenDev.fa lra_c
 
 **Hypothesis:** duplication in APOC3 chr11:116829907-116833072
 
+### igv 
+![](./files/APOC3_nanopore.png)
+> Screenshot of igv display over APOC3, from minimap2 alignment. 
+Coverage is too heterogeneous to conclude.
 
