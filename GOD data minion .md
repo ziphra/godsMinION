@@ -90,17 +90,17 @@ lra align -ONT -t 10 /media/god/DATA/reference_genome/hg38/hg38_GenDev.fa ../fas
 
 
 ## Quality check 
-**See quality check report for reads aligned with [minimap2](https://htmlpreview.github.io/?https://github.com/ziphra/long_reads/blob/main/files/mmiQC.html) and for reads aligned with [lra](https://htmlpreview.github.io/?https://github.com/ziphra/long_reads/blob/main/files/lraQC.html)**
+**See quality check report for reads aligned with [minimap2](https://htmlpreview.github.io/?https://github.com/ziphra/godsminion/blob/main/files/mmiQC.html) and for reads aligned with [lra](https://htmlpreview.github.io/?https://github.com/ziphra/long_reads/blob/main/files/lraQC.html)**
 
-- **Mean coverage** = 6 with minimap2, which is what could be expected for 2 MinION runs (see 2016 ONT post ["Human Genome on a MinION"](https://nanoporetech.com/about-us/news/human-genome-minion)). However, steady developments in flow cell chemistry, library preparation and base calling algorithms has seen reported sequencing yields increase from less than 3 GB to greater than 40 GB, allowing to have a 10x read depth from a single flowcell. 
+- **Mean coverage** = 6 with minimap2, which could be expected for 2 MinION runs (see 2016 ONT post ["Human Genome on a MinION"](https://However, steady developments in flow cell chemistry, library preparation, and base calling algorithms have seen reported sequencing yields increase from less than 3 GB to greater than 40 GB, allowing a 10x read depth from a single flowcell. 
 
-- **Read length** seems short, even if similar read length from minION sequencing were recently reported in the litterature ([Lamb et al, 2021](https://doi.org/10.1371/journal.pone.0261274)). We would usually expect a mean read length ranging from 8 to 20kb ([Leung et al, 2022](https://www.nature.com/articles/s41598-022-08576-4)). For structural variants detection, 20kb read length and longer allows to detects SVs accurately and sensitively ([Jiang et al, 2021](https://doi.org/10.1186/s12859‐021‐04422‐y)).
+- **Read length** seems short, even if similar read length from minION sequencing were recently reported in the literature ([Lamb *et al.*, 2021](https://doi.org/10.1371/journal.pone.0261274)). We would usually expect a mean read length ranging from 8 to 20kb ([Leung *et al.*, 2022](https://www.nature.com/articles/s41598-022-08576-4)). For structural variants detection, 20kb read length and longer allow for accurate and sensitive SVs detection ([Jiang *et al.*, 2021](https://doi.org/10.1186/s12859‐021‐04422‐y)).
 
 
 
 ## SNP calling 
 ### Pepper Margin Deep Variant
-Even though [Lamb et al, 2021](https://doi.org/10.1371/journal.pone.0261274) suggest ONT’s MinION sequencing at low coverage could be a useful tool for in-situ genomic prediction, with such bad quality scores, SNP cannot be recalled with confidence. 
+Even though [Lamb *et al.*, 2021](https://doi.org/10.1371/journal.pone.0261274) suggest that ONT’s MinION sequencing at low coverage could be a useful tool for in-situ genomic prediction, with such lousy quality scores, SNP cannot be recalled with confidence. 
 
 ```
 BASE="`pwd`"
@@ -146,8 +146,8 @@ run_pepper_margin_deepvariant call_variant \
 
 
 ## Structural variant calling 
-Structutal variant calling might be challenging due to low read coverage, and not so long read length. 
-A table summarizing parameters that can be adjust can be found here. Parameters that can be adjust to troubleshot low X and smaller reads are shown in red. 
+Structural variant calling might be challenging due to low read coverage and not so long read length. 
+A table summarizing parameters that can be adjusted can be found [here](./files/cutesnif.pdf). Parameters that can be adjusted to troubleshot low X and smaller reads are shown in red. 
 
 ### Sniffles 
 ```
