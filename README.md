@@ -90,7 +90,7 @@ lra align -ONT -t 10 /media/god/DATA/reference_genome/hg38/hg38_GenDev.fa ../fas
 
 
 ## 3. Quality check 
-**See quality check report for reads aligned with [minimap2](https://htmlpreview.github.io/?https://github.com/ziphra/godsminion/blob/main/files/mmiQC.html) and for reads aligned with [lra](https://htmlpreview.github.io/?https://github.com/ziphra/long_reads/blob/main/files/lraQC.html)**
+**See quality check report for reads aligned with [minimap2](https://rawcdn.githack.com/ziphra/godsminion/3a8e5829666f9f86cce88747fa23bfe4b4cb8ee5/files/mmiQC.html) and for reads aligned with [lra](https://rawcdn.githack.com/ziphra/godsminion/3a8e5829666f9f86cce88747fa23bfe4b4cb8ee5/files/lraQC.html)**
 
 - **Mean coverage** = 6 with minimap2, which could be expected for 2 MinION runs (see 2016 ONT post ["Human Genome on a MinION"](https://nanoporetech.com/about-us/news/human-genome-minion) However, steady developments in flow cell chemistry, library preparation, and base calling algorithms have seen reported sequencing yields increase from less than 3 GB to greater than 40 GB, allowing a 10x read depth from a single flowcell. 
 
